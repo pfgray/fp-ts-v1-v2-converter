@@ -1,0 +1,12 @@
+{
+  "name": "derivate",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "ts-node ./src/compile.ts"
+  }
+}

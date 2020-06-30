@@ -1,0 +1,16 @@
+{
+  "name": "transformer",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "@matechs/effect": "^7.0.2",
+    "cli-highlight": "^2.1.4",
+    "fp-ts": "^2.6.7",
+    "ts-adt": "^1.0.1",
+    "tsutils": "^3.17.1",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "build": "ts-node ./compile.ts"
+  }
+}
