@@ -10,29 +10,24 @@ const source = program.getSourceFile("../example/test.ts");
 const replacements: Replacement[] = [
   {
     importName: "fp-ts/lib/Either.d.ts",
-    transform: (m, id, args) =>
-      replace(
-        ts.createCall(ts.createIdentifier("pipe"), undefined, [
-          ts.createIdentifier(m),
-          ts.createCall(ts.createIdentifier("E." + id), undefined, args),
-        ]),
-        []
-      ),
     simpleTypeName: "Either",
+    context: "Either",
   },
   {
     importName: "fp-ts/lib/Option.d.ts",
-    transform: (m, id, args) =>
-      replace(
-        ts.createCall(ts.createIdentifier("pipe"), undefined, [
-          ts.createIdentifier(m),
-          ts.createCall(ts.createIdentifier("O." + id), undefined, args),
-        ]),
-        []
-      ),
     simpleTypeName: "Option",
+    context: "Option",
   },
 ];
+
+// transform: (m, id, args) =>
+//   replace(
+//     ts.createCall(ts.createIdentifier("pipe"), undefined, [
+//       ts.createIdentifier(m),
+//       ts.createCall(ts.createIdentifier("E." + id), undefined, args),
+//     ]),
+//     []
+//   ),
 
 if (source) {
   const result = ts.transform(source, [
@@ -55,9 +50,3 @@ if (source) {
 } else {
   console.log("couldnt find test.ts");
 }
-
-// Couldn't derive instance for type: User,
-// No Type<Date> found for path:
-// User
-//  └─image
-//    └─src
