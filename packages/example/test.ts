@@ -1,15 +1,17 @@
 import { Option, option, some, none } from "fp-ts/lib/Option";
 import { Either, right } from "fp-ts/lib/Either";
+import { identity } from "fp-ts/lib/function";
 
 type Hmm<A> = Either<string, A>;
 
-declare const foo: Hmm<string>;
+declare const foo: (s: Option<string>) => Hmm<string>;
 
-foo.map((a) => a.length);
+foo(some("yoo"));
 
-right("sdf")
-  .map((a) => a.length)
-  .fold(() => none, some)
+right(some("sdf"))
+  .map((a) => a.map((n) => n.length))
+  .fold(
+    () => none,
+    (a) => a.fold(none, some)
+  )
   .map((n) => n + 2);
-
-some(5).map((a) => a + 4);

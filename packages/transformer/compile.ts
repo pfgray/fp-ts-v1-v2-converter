@@ -20,15 +20,6 @@ const replacements: Replacement[] = [
   },
 ];
 
-// transform: (m, id, args) =>
-//   replace(
-//     ts.createCall(ts.createIdentifier("pipe"), undefined, [
-//       ts.createIdentifier(m),
-//       ts.createCall(ts.createIdentifier("E." + id), undefined, args),
-//     ]),
-//     []
-//   ),
-
 if (source) {
   const result = ts.transform(source, [
     makeTransformer(program, source, replacements),

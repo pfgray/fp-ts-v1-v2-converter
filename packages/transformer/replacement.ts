@@ -15,23 +15,7 @@ export const replace = (
   imports,
 });
 
-type Context = "Option" | "Either";
-
-export type PipeStep = {
-  i: Context;
-  method: string;
-  arguments: ts.NodeArray<ts.Expression>;
-};
-
-export const pipeStep = (
-  i: Context,
-  method: string,
-  args: ts.NodeArray<ts.Expression>
-) => ({
-  i,
-  method,
-  arguments: args,
-});
+export type Context = "Option" | "Either";
 
 export type Replacement = {
   simpleTypeName: string;
