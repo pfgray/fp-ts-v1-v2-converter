@@ -2,18 +2,6 @@
 # yarn lockfile v1
 
 
-"@derivate/core@^0.1.3-alpha.0":
-  version "0.1.3-alpha.0"
-  resolved "https://registry.yarnpkg.com/@derivate/core/-/core-0.1.3-alpha.0.tgz#6d55ec0d2d64ab03d78494fc69cc9cee2a90f43d"
-  integrity sha512-ipbkF7Tzvj7ZQeKPnkldT9mqTLVCWu6zBBXhUmsy7/IdZ8MWesZxfwEtL7fTc5/2Vt0c3vA8Y1BeyZBKMUyrqg==
-  dependencies:
-    fp-ts "^2.0.5"
-    fp-ts-contrib "^0.1.5"
-    monocle-ts "^2.0.0"
-    ts-adt "^1.0.1"
-    tsutils "^3.17.1"
-    typescript "3.7.0-dev.20191013"
-
 "@matechs/effect@^7.0.2":
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/@matechs/effect/-/effect-7.0.2.tgz#7a220d4148bd947602d13c21ae61edfb43eeab4c"
@@ -106,7 +94,7 @@ find-up@^4.1.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
-fp-ts-contrib@^0.1.5:
+fp-ts-contrib@^0.1.17:
   version "0.1.17"
   resolved "https://registry.yarnpkg.com/fp-ts-contrib/-/fp-ts-contrib-0.1.17.tgz#208ff83b2b457c61f458016e324ff95a5671c0c1"
   integrity sha512-UBQ7AdGp0GktLkIn3e6npVIfLm1ZM+racizgVqL88j6HBLBoBjRtVjIxRIS6YbNypuP94ngaZpy2SEib9lnZ9A==
@@ -116,7 +104,7 @@ fp-ts@1:
   resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-1.19.5.tgz#3da865e585dfa1fdfd51785417357ac50afc520a"
   integrity sha512-wDNqTimnzs8QqpldiId9OavWK2NptormjXnRJTQecNjzwfyp6P/8s/zG8e4h3ja3oqkKaY72UlTjQYt/1yXf9A==
 
-fp-ts@^2.0.5, fp-ts@^2.6.7:
+fp-ts@^2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.6.7.tgz#a86f904b86c93cd63300e6d40005e4caa57ccb6b"
   integrity sha512-Uklx0kKrjwbYb142tbQZqWVHhvNzxZwJhr+gkIbwPt/exV0n8/dHDkAmB05vNKNnJMwoJr7i6pM3XW0bicrE7Q==
@@ -136,11 +124,6 @@ highlight.js@^9.6.0:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.1.tgz#ed21aa001fe6252bb10a3d76d47573c6539fe13c"
   integrity sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
 
-io-ts@^2.0.1:
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/io-ts/-/io-ts-2.2.7.tgz#5c05477580bff4c0154b474316c8916253e87c44"
-  integrity sha512-kCusyu/Fa0oax5ue2Id/ZqVLEk5JOWyrXHcLbD4kHoVM50MhDEWUtcHlN7RrD94I8OrWILcVltM6OllnZiHJmg==
-
 is-fullwidth-code-point@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz#f116f8064fe90b3f7844a38997c0b75051269f1d"
@@ -152,11 +135,6 @@ locate-path@^5.0.0:
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   dependencies:
     p-locate "^4.1.0"
-
-monocle-ts@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/monocle-ts/-/monocle-ts-2.2.0.tgz#0837e9ab882e89ebf8fc2dd2514ec97c07baa0fa"
-  integrity sha512-ilfckgLMtfg+5ExxzdQxuEB2o7HcZjuevBkxwZ78d8p4Yo6QPwd8MRAfEgFXYBSyALgPV93RmRV7eHCfVP8jYw==
 
 mz@^2.4.0:
   version "2.7.0"
@@ -207,6 +185,11 @@ path-exists@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-4.0.0.tgz#513bdbe2d3b95d7762e8c1137efa195c6c61b5b3"
   integrity sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==
+
+prettier@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
+  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
 
 require-directory@^2.1.1:
   version "2.1.1"
@@ -276,11 +259,6 @@ tsutils@^3.17.1:
   integrity sha512-kzeQ5B8H3w60nFY2g8cJIuH7JDpsALXySGtwGJ0p2LSjLgay3NdIpqq5SoOBe46bKDW2iq25irHCr8wjomUS2g==
   dependencies:
     tslib "^1.8.1"
-
-typescript@3.7.0-dev.20191013:
-  version "3.7.0-dev.20191013"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.0-dev.20191013.tgz#a05c662f91826829ce8f68e02507a2efa40df1e9"
-  integrity sha512-YQYixdtIJJT9sLjbmrZ5WXqABas3DfVzIFVQj9mT/NkU16k/7mtVnvJlk5O7UpiZ3N5QsPzyt0Isbmu0eu2imw==
 
 typescript@^3.9.5:
   version "3.9.5"

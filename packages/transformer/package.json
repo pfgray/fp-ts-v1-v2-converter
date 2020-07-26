@@ -6,6 +6,8 @@
     "@matechs/effect": "^7.0.2",
     "cli-highlight": "^2.1.4",
     "fp-ts": "^2.6.7",
+    "fp-ts-contrib": "^0.1.17",
+    "prettier": "^2.0.5",
     "ts-adt": "^1.0.1",
     "tsutils": "^3.17.1",
     "typescript": "^3.9.5"

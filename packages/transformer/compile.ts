@@ -3,6 +3,7 @@ import { makeTransformer } from "./transformer";
 
 import { highlight } from "cli-highlight";
 import { Replacement, replace } from "./replacement";
+import * as prettier from "prettier";
 
 const program = ts.createProgram(["../example/test.ts"], {});
 const source = program.getSourceFile("../example/test.ts");
@@ -33,9 +34,14 @@ if (source) {
   );
   console.log("/** Into: **/");
   console.log(
-    highlight(ts.createPrinter().printFile(result.transformed[0]), {
-      language: "typescript",
-    })
+    highlight(
+      prettier.format(ts.createPrinter().printFile(result.transformed[0]), {
+        parser: "typescript",
+      }),
+      {
+        language: "typescript",
+      }
+    )
   );
   console.log("/****/");
 } else {
